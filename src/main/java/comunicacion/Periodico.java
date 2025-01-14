@@ -56,8 +56,8 @@ public class Periodico extends Escrito {
     
     public String toString() {
 		String p = this.getOrigen() + "\n";
-		p += this.fecha;
-		p += this.primicia;
+		p += this.fecha + "\n";
+		p += this.primicia + "\n";
 		p += this.tipo;
 		return p;
 	}

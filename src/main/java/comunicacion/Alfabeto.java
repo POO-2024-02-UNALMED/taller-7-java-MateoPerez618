@@ -43,7 +43,7 @@ public abstract class Alfabeto extends Pictograma {
 
     public String toString() {
     	String a = this.getOrigen() + "\n";
-        a += this.cantidadLetras();
+        a += this.cantidadLetras() + "\n";
 		a += this.tipo;
 		
 		return  a;

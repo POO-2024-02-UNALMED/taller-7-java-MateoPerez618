@@ -69,7 +69,7 @@ public class libro extends Escrito {
 		String l = this.getOrigen() + "\n";
 		l += this.co_autor + "\n";
 		l += this.editorial + "\n";
-		l += this.edicion;
+		l += this.edicion + "\n";
 		l += this.tipo;
 		return  l;
 	}

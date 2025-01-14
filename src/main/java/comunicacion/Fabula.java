@@ -46,7 +46,7 @@ public class Fabula extends Escrito {
     
     public String toString() {
 		String f = this.getOrigen() + "\n";
-		f += this.ensenanzas;
+		f += this.ensenanzas + "\n";
 		f += this.tipo;
 		return f;
 	}

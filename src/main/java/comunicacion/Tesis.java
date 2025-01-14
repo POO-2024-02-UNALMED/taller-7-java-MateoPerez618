@@ -59,7 +59,7 @@ public class Tesis extends Escrito {
         return tipo;
     }
 
-    public void settTipo(String tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
     
@@ -81,10 +81,10 @@ public class Tesis extends Escrito {
     
     public String toString() {
 		String t = this.getOrigen() + "\n";
-		t += this.idea;
-		t += this.getCantidadArgumentos();
-		t += this.conclusion;
-		t += this.referencias;
+		t += this.idea + "\n";
+		t += this.getCantidadArgumentos() + "\n";
+		t += this.conclusion + "\n";
+		t += this.referencias + "\n";
 		t += this.tipo;
 		return t;
 	}
