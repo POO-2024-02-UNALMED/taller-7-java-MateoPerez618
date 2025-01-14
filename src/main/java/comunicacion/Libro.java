@@ -74,7 +74,8 @@ public class Libro extends Escrito {
 		l += this.co_autor + "\n";
 		l += this.editorial + "\n";
 		l += this.edicion + "\n";
-		l += this.tipo;
+		l += this.tipo + "\n";
+		l += this.interpretacion;
 		return  l;
 	}
 }

@@ -89,7 +89,8 @@ public class Tesis extends Escrito {
 		t += this.getCantidadArgumentos() + "\n";
 		t += this.conclusion + "\n";
 		t += this.referencias + "\n";
-		t += this.tipo;
+		t += this.tipo + "\n";
+		t += this.interpretacion;
 		return t;
 	}
 

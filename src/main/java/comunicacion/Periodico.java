@@ -62,7 +62,8 @@ public class Periodico extends Escrito {
 		p += this.getPaginas() + "\n";
 		p += this.fecha + "\n";
 		p += this.primicia + "\n";
-		p += this.tipo;
+		p += this.tipo + "\n";
+		p += this.interpretacion;
 		return p;
 	}
 
