@@ -1,19 +1,18 @@
 package comunicacion;
 
-import java.util.List;
-
 public abstract class Alfabeto extends Pictograma {
-    private static List<String> letras;
+    private String[] letras;
     private String tipo;
     private String interpretacion;
 
-    public Alfabeto(String origen, String tipo, String interpretacion) {
+    public Alfabeto(String origen, String[] letras, String tipo, String interpretacion) {
         super(origen);
+        this.letras = letras;
         this.tipo = tipo;
         this.interpretacion = interpretacion;
     }
 
-    public static List<String> getLetras() {
+    public String[] getLetras() {
         return letras;
     }
     
@@ -26,9 +25,9 @@ public abstract class Alfabeto extends Pictograma {
     }
     
     public int cantidadLetras() {
-        return letras.size();
+        return (letras != null) ? letras.length : 0;
     }
-
+    
     public String getInterpretacion() {
         return interpretacion;
     }
