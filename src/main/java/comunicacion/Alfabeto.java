@@ -1,6 +1,6 @@
 package comunicacion;
 
-public abstract class Alfabeto extends Pictograma {
+public class Alfabeto extends Pictograma {
     private String[] letras;
     private String tipo;
     private String interpretacion;
@@ -9,7 +9,6 @@ public abstract class Alfabeto extends Pictograma {
         super(origen);
         this.letras = letras;
         this.tipo = tipo;
-        this.interpretacion = interpretacion;
     }
 
     public String[] getLetras() {
