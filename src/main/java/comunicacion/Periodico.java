@@ -6,12 +6,11 @@ public class Periodico extends Escrito {
 	private String interpretacion;
 	private String tipo;
 	
-	public Periodico(String origen, String titulo, String autor, int paginas, String fecha, String primicia, String tipo, String interpretacion) {
+	public Periodico(String origen, String titulo, String autor, int paginas, String fecha, String primicia, String tipo) {
 		super(origen, titulo, autor, paginas);
 		this.fecha = fecha;
 		this.primicia = primicia;
 		this.tipo = tipo;
-		this.interpretacion = interpretacion;
 	}
 	
 	public String getFecha() {
@@ -62,8 +61,7 @@ public class Periodico extends Escrito {
 		p += this.getPaginas() + "\n";
 		p += this.fecha + "\n";
 		p += this.primicia + "\n";
-		p += this.tipo + "\n";
-		p += this.interpretacion;
+		p += this.tipo;
 		return p;
 	}
 

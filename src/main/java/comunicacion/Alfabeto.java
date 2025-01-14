@@ -5,7 +5,7 @@ public abstract class Alfabeto extends Pictograma {
     private String tipo;
     private String interpretacion;
 
-    public Alfabeto(String origen, String[] letras, String tipo, String interpretacion) {
+    public Alfabeto(String origen, String[] letras, String tipo) {
         super(origen);
         this.letras = letras;
         this.tipo = tipo;
@@ -39,13 +39,13 @@ public abstract class Alfabeto extends Pictograma {
     public String interpretacion() {
         return this.interpretacion;
     }
+    
+    @Override
 
     public String toString() {
     	String a = this.getOrigen() + "\n";
         a += this.cantidadLetras() + "\n";
-		a += this.tipo + "\n";
-		a += this.interpretacion;
-		
+		a += this.tipo;		
 		return  a;
 	}
 }

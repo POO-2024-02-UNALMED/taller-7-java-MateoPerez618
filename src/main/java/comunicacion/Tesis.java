@@ -8,14 +8,13 @@ public class Tesis extends Escrito {
 	private String tipo;
 	private String interpretacion;
 	
-	public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos, String conclusion, String referencias, String tipo, String interpretacion) {
+	public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos, String conclusion, String referencias, String tipo) {
 		super(origen, titulo, autor, paginas);
 		this.idea = idea;
 		this.argumentos = argumentos;
 		this.conclusion = conclusion;
 		this.referencias = referencias;
 		this.tipo = tipo;
-		this.interpretacion = interpretacion;
 	}
 	
 	public String getIdea() {
@@ -89,8 +88,7 @@ public class Tesis extends Escrito {
 		t += this.getCantidadArgumentos() + "\n";
 		t += this.conclusion + "\n";
 		t += this.referencias + "\n";
-		t += this.tipo + "\n";
-		t += this.interpretacion;
+		t += this.tipo;
 		return t;
 	}
 
